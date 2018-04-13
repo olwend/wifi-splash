@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  email signup form for linked page in NHM Explorer mobile app -->
+<head>
+
+<!-- Include for GA functionality -->
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-894268-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	<meta charset="utf-8">
+	<title>Natural History Museum | Natural History Museum</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- GA tracking -->
+	<script src="js/ga.js"></script>
+
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/section.css">
+	<link rel="stylesheet" href="css/wifi.css">
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
+	<script src="js/libs/modernizr-custom.js"></script>-->
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header role="banner">
+		<div id="page-logo">
+			<a title="Home" href="index.html">
+				<img width="132" height="63" alt="NHM" src="images/nhm-logo.jpg">
+			</a>
+		</div>
+	</header>
+	<div id="column-a" class="column">
+		<div id="panel-one" class="panel">
+			<div class="panel-intro">
+				<!--<p>
+					<b>Welcome to the Museum.</b>
+				</p>
+					<div class="panel-content">
+					<h3>
+					Get our email updates
+					</h3>-->
+					<form method="POST" action="/customer-data-collector/CampaignResponse">
+					<input id="source" name="source" type="hidden" value="visitorApp">
+					<p>
+					Please enter your email address in the box below and click 'Sign up'.
+					</p>
+					<fieldset>
+						<input
+							id="email-input"
+							name="email">
+						<input
+							type="submit"
+							id="email-button"
+							value="Sign up">
+						<div class="feedbackWrapper" data-placeholder-for="feedback">
+							<div class="feedback">
+
+
+					<div class="smallPrint">
+						<p id="personal">We will use your personal information to improve our understanding of our target audiences and supporters, and to send you news and information. For more details, please see our <a target="_blank" href="http://www.nhm.ac.uk/my-nhm/privacy-policy/index.html">Privacy Policy</a>.</p>
+                    </div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>
+			&copy; 2014 The Natural History Museum.
+			<br>
+			All Rights Reserved
+		</p>
+	</footer>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js_visitorapp/jquery.placeholder.js"></script>
+	<script src="js_visitorapp/validation.js"></script>
+</body>
+</html>
