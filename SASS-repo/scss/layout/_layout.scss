@@ -1,0 +1,40 @@
+.wifi-content--container {
+	max-width: 375px;
+	padding-right: $gutter;
+	padding-bottom: $gutter;
+	padding-left: $gutter;
+}
+
+.wifi-logo--container {
+	padding: $gutter/2 $gutter;
+	margin-bottom: $gutter;
+	border-bottom: 2px solid #808080;
+}
+
+.wifi--block-grid {
+	margin: 0;
+
+	li {
+		padding-right: 0;
+		padding-bottom: $gutter;
+		padding-left: 0;
+
+		&.last {
+			padding-bottom: 0;
+		}
+	}
+}
+
+.wifi--social-icons {
+	list-style-type: none;
+	margin-left: 0;
+
+	li {
+		padding-left: 0;
+
+		a {
+			border: none;
+			text-decoration: none;
+		}
+	}
+}

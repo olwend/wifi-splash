@@ -1,0 +1,38 @@
+.wifi--form-field {
+	border: 2px solid $grey !important;
+}
+
+.wifi--form-button {
+	max-width: 100%;
+	border-radius: 0;
+}
+
+.wifi--form-error, .wifi--form-success {
+  color: red;
+  opacity: 0;
+  margin: 10px 0;
+  transition: opacity 1s ease-in-out;
+
+  &.show {
+	opacity: 1;
+  }
+  &.success {
+	color:black;
+	font-weight: bolder;
+	border: 1px solid #565656;
+	padding:10px;
+  }
+ }
+
+#enewsFormBlock {
+  max-height: 1000px !important;
+  overflow: hidden;
+  display:none;
+
+  &.hide {
+	max-height: 0px !important;
+	-webkit-transition: max-height 1.5s linear;
+	transition: max-height 1.5s linear;
+	transition-delay: 0s;
+  }
+ }

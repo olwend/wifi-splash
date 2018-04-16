@@ -1,6 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  /*background-image: url("bluewhale.png");
+  background-repeat: no-repeat;
+  background-position: right -90px center;
+  background-attachment: fixed;
+  background-size: cover;*/
 }
 
 hr {
@@ -103,21 +108,36 @@ p {
   border-radius: 0;
 }
 
-.wifi--form-error {
+.wifi--form-error, .wifi--form-success {
   color: red;
   opacity: 0;
   margin: 10px 0;
+  transition: opacity 1s ease-in-out;
  }
 
-.wifi--form-error.show {
+.wifi--form-error.show, .wifi--form-success.show {
   opacity: 1;
-   transition: opacity 0.8s ease-in-out;
  }
 
- .wifi--form-error.success {
+ .wifi--form-error.success, .wifi--form-success.success {
   color:black;
   font-weight: bolder;
+  border: 1px solid #565656;
+  padding:10px;
  }
 
+
+#enewsFormBlock {
+     max-height: 1000px !important;
+    overflow: hidden;
+    display:none;
+ }
+
+#enewsFormBlock.hide {
+    max-height: 0px !important;
+    -webkit-transition: max-height 1.5s linear;
+    transition: max-height 1.5s linear;
+    transition-delay: 0s;
+   }
 
 /*# sourceMappingURL=wifi-splash-page.css.map */
